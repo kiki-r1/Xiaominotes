@@ -1,0 +1,374 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="net.micode.notes"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+7-->INJECTED
+8        android:minSdkVersion="24"
+8-->INJECTED
+9        android:targetSdkVersion="34" />
+9-->INJECTED
+10
+11    <!-- 权限保持不变 -->
+12    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+12-->D:\Notes\app\src\main\AndroidManifest.xml:8:5-81
+12-->D:\Notes\app\src\main\AndroidManifest.xml:8:22-78
+13    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+13-->D:\Notes\app\src\main\AndroidManifest.xml:9:5-88
+13-->D:\Notes\app\src\main\AndroidManifest.xml:9:22-85
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->D:\Notes\app\src\main\AndroidManifest.xml:10:5-67
+14-->D:\Notes\app\src\main\AndroidManifest.xml:10:22-64
+15    <uses-permission android:name="android.permission.READ_CONTACTS" />
+15-->D:\Notes\app\src\main\AndroidManifest.xml:11:5-72
+15-->D:\Notes\app\src\main\AndroidManifest.xml:11:22-69
+16    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+16-->D:\Notes\app\src\main\AndroidManifest.xml:12:5-74
+16-->D:\Notes\app\src\main\AndroidManifest.xml:12:22-71
+17    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+17-->D:\Notes\app\src\main\AndroidManifest.xml:13:5-80
+17-->D:\Notes\app\src\main\AndroidManifest.xml:13:22-77
+18    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+18-->D:\Notes\app\src\main\AndroidManifest.xml:14:5-71
+18-->D:\Notes\app\src\main\AndroidManifest.xml:14:22-68
+19    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+19-->D:\Notes\app\src\main\AndroidManifest.xml:15:5-74
+19-->D:\Notes\app\src\main\AndroidManifest.xml:15:22-71
+20    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+20-->D:\Notes\app\src\main\AndroidManifest.xml:16:5-81
+20-->D:\Notes\app\src\main\AndroidManifest.xml:16:22-78
+21
+22    <permission
+22-->[androidx.core:core:1.13.0] C:\Users\17485\.gradle\caches\9.3.1\transforms\ed0f0103ed0447ce6486750fc020ac58\workspace\transformed\core-1.13.0\AndroidManifest.xml:22:5-24:47
+23        android:name="net.micode.notes.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+23-->[androidx.core:core:1.13.0] C:\Users\17485\.gradle\caches\9.3.1\transforms\ed0f0103ed0447ce6486750fc020ac58\workspace\transformed\core-1.13.0\AndroidManifest.xml:23:9-81
+24        android:protectionLevel="signature" />
+24-->[androidx.core:core:1.13.0] C:\Users\17485\.gradle\caches\9.3.1\transforms\ed0f0103ed0447ce6486750fc020ac58\workspace\transformed\core-1.13.0\AndroidManifest.xml:24:9-44
+25
+26    <uses-permission android:name="net.micode.notes.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+26-->[androidx.core:core:1.13.0] C:\Users\17485\.gradle\caches\9.3.1\transforms\ed0f0103ed0447ce6486750fc020ac58\workspace\transformed\core-1.13.0\AndroidManifest.xml:26:5-97
+26-->[androidx.core:core:1.13.0] C:\Users\17485\.gradle\caches\9.3.1\transforms\ed0f0103ed0447ce6486750fc020ac58\workspace\transformed\core-1.13.0\AndroidManifest.xml:26:22-94
+27
+28    <application
+28-->D:\Notes\app\src\main\AndroidManifest.xml:18:5-149:19
+29        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+29-->[androidx.core:core:1.13.0] C:\Users\17485\.gradle\caches\9.3.1\transforms\ed0f0103ed0447ce6486750fc020ac58\workspace\transformed\core-1.13.0\AndroidManifest.xml:28:18-86
+30        android:debuggable="true"
+31        android:exported="true"
+31-->D:\Notes\app\src\main\AndroidManifest.xml:21:9-32
+32        android:extractNativeLibs="false"
+32-->INJECTED
+33        android:icon="@drawable/icon_app"
+33-->D:\Notes\app\src\main\AndroidManifest.xml:19:9-42
+34        android:label="@string/app_name"
+34-->D:\Notes\app\src\main\AndroidManifest.xml:20:9-41
+35        android:testOnly="true" >
+36
+37        <!-- 主页面：笔记列表 - 已添加搜索支持 -->
+38        <activity
+38-->D:\Notes\app\src\main\AndroidManifest.xml:24:9-48:20
+39            android:name="net.micode.notes.ui.NotesListActivity"
+39-->D:\Notes\app\src\main\AndroidManifest.xml:25:13-49
+40            android:configChanges="keyboardHidden|orientation|screenSize"
+40-->D:\Notes\app\src\main\AndroidManifest.xml:26:13-74
+41            android:exported="true"
+41-->D:\Notes\app\src\main\AndroidManifest.xml:32:13-36
+42            android:label="@string/app_name"
+42-->D:\Notes\app\src\main\AndroidManifest.xml:27:13-45
+43            android:launchMode="singleTop"
+43-->D:\Notes\app\src\main\AndroidManifest.xml:28:13-43
+44            android:theme="@style/NoteTheme"
+44-->D:\Notes\app\src\main\AndroidManifest.xml:29:13-45
+45            android:uiOptions="splitActionBarWhenNarrow"
+45-->D:\Notes\app\src\main\AndroidManifest.xml:30:13-57
+46            android:windowSoftInputMode="adjustPan" >
+46-->D:\Notes\app\src\main\AndroidManifest.xml:31:13-52
+47            <intent-filter>
+47-->D:\Notes\app\src\main\AndroidManifest.xml:34:13-37:29
+48                <action android:name="android.intent.action.MAIN" />
+48-->D:\Notes\app\src\main\AndroidManifest.xml:35:17-69
+48-->D:\Notes\app\src\main\AndroidManifest.xml:35:25-66
+49
+50                <category android:name="android.intent.category.LAUNCHER" />
+50-->D:\Notes\app\src\main\AndroidManifest.xml:36:17-77
+50-->D:\Notes\app\src\main\AndroidManifest.xml:36:27-74
+51            </intent-filter>
+52
+53            <!-- 新增：搜索支持 -->
+54            <intent-filter>
+54-->D:\Notes\app\src\main\AndroidManifest.xml:40:13-43:29
+55                <action android:name="android.intent.action.SEARCH" />
+55-->D:\Notes\app\src\main\AndroidManifest.xml:41:17-71
+55-->D:\Notes\app\src\main\AndroidManifest.xml:41:25-68
+56
+57                <category android:name="android.intent.category.DEFAULT" />
+57-->D:\Notes\app\src\main\AndroidManifest.xml:42:17-76
+57-->D:\Notes\app\src\main\AndroidManifest.xml:42:27-73
+58            </intent-filter>
+59
+60            <meta-data
+60-->D:\Notes\app\src\main\AndroidManifest.xml:45:13-47:54
+61                android:name="android.app.searchable"
+61-->D:\Notes\app\src\main\AndroidManifest.xml:46:17-54
+62                android:resource="@xml/searchable" />
+62-->D:\Notes\app\src\main\AndroidManifest.xml:47:17-51
+63        </activity>
+64
+65        <!-- 笔记编辑页面 - 移除搜索相关配置 -->
+66        <!-- 笔记编辑页面 -->
+67        <activity
+67-->D:\Notes\app\src\main\AndroidManifest.xml:52:9-74:20
+68            android:name="net.micode.notes.ui.NoteEditActivity"
+68-->D:\Notes\app\src\main\AndroidManifest.xml:53:13-48
+69            android:configChanges="keyboardHidden|orientation|screenSize"
+69-->D:\Notes\app\src\main\AndroidManifest.xml:54:13-74
+70            android:exported="true"
+70-->D:\Notes\app\src\main\AndroidManifest.xml:57:13-36
+71            android:launchMode="singleTop"
+71-->D:\Notes\app\src\main\AndroidManifest.xml:55:13-43
+72            android:theme="@style/NoteTheme" >
+72-->D:\Notes\app\src\main\AndroidManifest.xml:56:13-45
+73
+74            <!-- 查看笔记 -->
+75            <intent-filter>
+75-->D:\Notes\app\src\main\AndroidManifest.xml:60:13-65:29
+76                <action android:name="android.intent.action.VIEW" />
+76-->D:\Notes\app\src\main\AndroidManifest.xml:61:17-69
+76-->D:\Notes\app\src\main\AndroidManifest.xml:61:25-66
+77
+78                <category android:name="android.intent.category.DEFAULT" />
+78-->D:\Notes\app\src\main\AndroidManifest.xml:42:17-76
+78-->D:\Notes\app\src\main\AndroidManifest.xml:42:27-73
+79
+80                <data android:mimeType="vnd.android.cursor.item/text_note" />
+80-->D:\Notes\app\src\main\AndroidManifest.xml:63:17-78
+80-->D:\Notes\app\src\main\AndroidManifest.xml:63:23-75
+81                <data android:mimeType="vnd.android.cursor.item/call_note" />
+81-->D:\Notes\app\src\main\AndroidManifest.xml:63:17-78
+81-->D:\Notes\app\src\main\AndroidManifest.xml:63:23-75
+82            </intent-filter>
+83
+84            <!-- 新建或编辑笔记 -->
+85            <intent-filter>
+85-->D:\Notes\app\src\main\AndroidManifest.xml:68:13-73:29
+86                <action android:name="android.intent.action.INSERT_OR_EDIT" />
+86-->D:\Notes\app\src\main\AndroidManifest.xml:69:17-79
+86-->D:\Notes\app\src\main\AndroidManifest.xml:69:25-76
+87
+88                <category android:name="android.intent.category.DEFAULT" />
+88-->D:\Notes\app\src\main\AndroidManifest.xml:42:17-76
+88-->D:\Notes\app\src\main\AndroidManifest.xml:42:27-73
+89
+90                <data android:mimeType="vnd.android.cursor.item/text_note" />
+90-->D:\Notes\app\src\main\AndroidManifest.xml:63:17-78
+90-->D:\Notes\app\src\main\AndroidManifest.xml:63:23-75
+91                <data android:mimeType="vnd.android.cursor.item/call_note" />
+91-->D:\Notes\app\src\main\AndroidManifest.xml:63:17-78
+91-->D:\Notes\app\src\main\AndroidManifest.xml:63:23-75
+92            </intent-filter>
+93        </activity>
+94
+95        <!-- 其他组件保持不变 -->
+96        <provider
+96-->D:\Notes\app\src\main\AndroidManifest.xml:77:9-81:40
+97            android:name="net.micode.notes.data.NotesProvider"
+97-->D:\Notes\app\src\main\AndroidManifest.xml:78:13-63
+98            android:authorities="micode_notes"
+98-->D:\Notes\app\src\main\AndroidManifest.xml:79:13-47
+99            android:exported="false"
+99-->D:\Notes\app\src\main\AndroidManifest.xml:81:13-37
+100            android:multiprocess="true" />
+100-->D:\Notes\app\src\main\AndroidManifest.xml:80:13-40
+101
+102        <receiver
+102-->D:\Notes\app\src\main\AndroidManifest.xml:83:9-95:20
+103            android:name="net.micode.notes.widget.NoteWidgetProvider_2x"
+103-->D:\Notes\app\src\main\AndroidManifest.xml:84:13-57
+104            android:exported="false"
+104-->D:\Notes\app\src\main\AndroidManifest.xml:86:13-37
+105            android:label="@string/app_widget2x2" >
+105-->D:\Notes\app\src\main\AndroidManifest.xml:85:13-50
+106            <intent-filter>
+106-->D:\Notes\app\src\main\AndroidManifest.xml:87:13-91:29
+107                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+107-->D:\Notes\app\src\main\AndroidManifest.xml:88:17-84
+107-->D:\Notes\app\src\main\AndroidManifest.xml:88:25-81
+108                <action android:name="android.appwidget.action.APPWIDGET_DELETED" />
+108-->D:\Notes\app\src\main\AndroidManifest.xml:89:17-85
+108-->D:\Notes\app\src\main\AndroidManifest.xml:89:25-82
+109                <action android:name="android.intent.action.PRIVACY_MODE_CHANGED" />
+109-->D:\Notes\app\src\main\AndroidManifest.xml:90:17-85
+109-->D:\Notes\app\src\main\AndroidManifest.xml:90:25-82
+110            </intent-filter>
+111
+112            <meta-data
+112-->D:\Notes\app\src\main\AndroidManifest.xml:92:13-94:58
+113                android:name="android.appwidget.provider"
+113-->D:\Notes\app\src\main\AndroidManifest.xml:93:17-58
+114                android:resource="@xml/widget_2x_info" />
+114-->D:\Notes\app\src\main\AndroidManifest.xml:94:17-55
+115        </receiver>
+116        <receiver
+116-->D:\Notes\app\src\main\AndroidManifest.xml:97:9-109:20
+117            android:name="net.micode.notes.widget.NoteWidgetProvider_4x"
+117-->D:\Notes\app\src\main\AndroidManifest.xml:98:13-57
+118            android:exported="false"
+118-->D:\Notes\app\src\main\AndroidManifest.xml:100:13-37
+119            android:label="@string/app_widget4x4" >
+119-->D:\Notes\app\src\main\AndroidManifest.xml:99:13-50
+120            <intent-filter>
+120-->D:\Notes\app\src\main\AndroidManifest.xml:87:13-91:29
+121                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+121-->D:\Notes\app\src\main\AndroidManifest.xml:88:17-84
+121-->D:\Notes\app\src\main\AndroidManifest.xml:88:25-81
+122                <action android:name="android.appwidget.action.APPWIDGET_DELETED" />
+122-->D:\Notes\app\src\main\AndroidManifest.xml:89:17-85
+122-->D:\Notes\app\src\main\AndroidManifest.xml:89:25-82
+123                <action android:name="android.intent.action.PRIVACY_MODE_CHANGED" />
+123-->D:\Notes\app\src\main\AndroidManifest.xml:90:17-85
+123-->D:\Notes\app\src\main\AndroidManifest.xml:90:25-82
+124            </intent-filter>
+125
+126            <meta-data
+126-->D:\Notes\app\src\main\AndroidManifest.xml:92:13-94:58
+127                android:name="android.appwidget.provider"
+127-->D:\Notes\app\src\main\AndroidManifest.xml:93:17-58
+128                android:resource="@xml/widget_4x_info" />
+128-->D:\Notes\app\src\main\AndroidManifest.xml:94:17-55
+129        </receiver>
+130        <receiver
+130-->D:\Notes\app\src\main\AndroidManifest.xml:111:9-116:20
+131            android:name="net.micode.notes.ui.AlarmInitReceiver"
+131-->D:\Notes\app\src\main\AndroidManifest.xml:111:19-55
+132            android:exported="false" >
+132-->D:\Notes\app\src\main\AndroidManifest.xml:112:13-37
+133            <intent-filter>
+133-->D:\Notes\app\src\main\AndroidManifest.xml:113:13-115:29
+134                <action android:name="android.intent.action.BOOT_COMPLETED" />
+134-->D:\Notes\app\src\main\AndroidManifest.xml:114:17-79
+134-->D:\Notes\app\src\main\AndroidManifest.xml:114:25-76
+135            </intent-filter>
+136        </receiver>
+137        <receiver
+137-->D:\Notes\app\src\main\AndroidManifest.xml:118:9-122:20
+138            android:name="net.micode.notes.ui.AlarmReceiver"
+138-->D:\Notes\app\src\main\AndroidManifest.xml:119:13-61
+139            android:exported="false"
+139-->D:\Notes\app\src\main\AndroidManifest.xml:121:13-37
+140            android:process=":remote" >
+140-->D:\Notes\app\src\main\AndroidManifest.xml:120:13-38
+141        </receiver>
+142
+143        <activity
+143-->D:\Notes\app\src\main\AndroidManifest.xml:124:9-130:20
+144            android:name="net.micode.notes.ui.AlarmAlertActivity"
+144-->D:\Notes\app\src\main\AndroidManifest.xml:125:13-50
+145            android:exported="false"
+145-->D:\Notes\app\src\main\AndroidManifest.xml:129:13-37
+146            android:label="@string/app_name"
+146-->D:\Notes\app\src\main\AndroidManifest.xml:126:13-45
+147            android:launchMode="singleInstance"
+147-->D:\Notes\app\src\main\AndroidManifest.xml:127:13-48
+148            android:theme="@android:style/Theme.Holo.Wallpaper.NoTitleBar" >
+148-->D:\Notes\app\src\main\AndroidManifest.xml:128:13-75
+149        </activity>
+150        <activity
+150-->D:\Notes\app\src\main\AndroidManifest.xml:132:9-138:20
+151            android:name="net.micode.notes.ui.NotesPreferenceActivity"
+151-->D:\Notes\app\src\main\AndroidManifest.xml:133:13-71
+152            android:exported="false"
+152-->D:\Notes\app\src\main\AndroidManifest.xml:137:13-37
+153            android:label="@string/preferences_title"
+153-->D:\Notes\app\src\main\AndroidManifest.xml:134:13-54
+154            android:launchMode="singleTop"
+154-->D:\Notes\app\src\main\AndroidManifest.xml:135:13-43
+155            android:theme="@android:style/Theme.Holo.Light" >
+155-->D:\Notes\app\src\main\AndroidManifest.xml:136:13-60
+156        </activity>
+157
+158        <service
+158-->D:\Notes\app\src\main\AndroidManifest.xml:140:9-143:19
+159            android:name="net.micode.notes.gtask.remote.GTaskSyncService"
+159-->D:\Notes\app\src\main\AndroidManifest.xml:141:13-74
+160            android:exported="false" >
+160-->D:\Notes\app\src\main\AndroidManifest.xml:142:13-37
+161        </service>
+162
+163        <!-- 修改：默认搜索指向 NotesListActivity -->
+164        <meta-data
+164-->D:\Notes\app\src\main\AndroidManifest.xml:146:9-148:53
+165            android:name="android.app.default_searchable"
+165-->D:\Notes\app\src\main\AndroidManifest.xml:147:13-58
+166            android:value=".ui.NotesListActivity" />
+166-->D:\Notes\app\src\main\AndroidManifest.xml:148:13-50
+167
+168        <provider
+168-->[androidx.emoji2:emoji2:1.3.0] C:\Users\17485\.gradle\caches\9.3.1\transforms\d040526bfebf37a4f9136e0b31da7289\workspace\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+169            android:name="androidx.startup.InitializationProvider"
+169-->[androidx.emoji2:emoji2:1.3.0] C:\Users\17485\.gradle\caches\9.3.1\transforms\d040526bfebf37a4f9136e0b31da7289\workspace\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:25:13-67
+170            android:authorities="net.micode.notes.androidx-startup"
+170-->[androidx.emoji2:emoji2:1.3.0] C:\Users\17485\.gradle\caches\9.3.1\transforms\d040526bfebf37a4f9136e0b31da7289\workspace\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:26:13-68
+171            android:exported="false" >
+171-->[androidx.emoji2:emoji2:1.3.0] C:\Users\17485\.gradle\caches\9.3.1\transforms\d040526bfebf37a4f9136e0b31da7289\workspace\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:27:13-37
+172            <meta-data
+172-->[androidx.emoji2:emoji2:1.3.0] C:\Users\17485\.gradle\caches\9.3.1\transforms\d040526bfebf37a4f9136e0b31da7289\workspace\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+173                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+173-->[androidx.emoji2:emoji2:1.3.0] C:\Users\17485\.gradle\caches\9.3.1\transforms\d040526bfebf37a4f9136e0b31da7289\workspace\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:30:17-75
+174                android:value="androidx.startup" />
+174-->[androidx.emoji2:emoji2:1.3.0] C:\Users\17485\.gradle\caches\9.3.1\transforms\d040526bfebf37a4f9136e0b31da7289\workspace\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:31:17-49
+175            <meta-data
+175-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\17485\.gradle\caches\9.3.1\transforms\b777bef2aec01833e3f55525fc86a049\workspace\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
+176                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+176-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\17485\.gradle\caches\9.3.1\transforms\b777bef2aec01833e3f55525fc86a049\workspace\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
+177                android:value="androidx.startup" />
+177-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\17485\.gradle\caches\9.3.1\transforms\b777bef2aec01833e3f55525fc86a049\workspace\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
+178            <meta-data
+178-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\17485\.gradle\caches\9.3.1\transforms\22091fd7c4565dc8731efc12e2a7470f\workspace\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:29:13-31:52
+179                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+179-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\17485\.gradle\caches\9.3.1\transforms\22091fd7c4565dc8731efc12e2a7470f\workspace\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:30:17-85
+180                android:value="androidx.startup" />
+180-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\17485\.gradle\caches\9.3.1\transforms\22091fd7c4565dc8731efc12e2a7470f\workspace\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:31:17-49
+181        </provider>
+182
+183        <receiver
+183-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\17485\.gradle\caches\9.3.1\transforms\22091fd7c4565dc8731efc12e2a7470f\workspace\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:34:9-52:20
+184            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+184-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\17485\.gradle\caches\9.3.1\transforms\22091fd7c4565dc8731efc12e2a7470f\workspace\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:35:13-76
+185            android:directBootAware="false"
+185-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\17485\.gradle\caches\9.3.1\transforms\22091fd7c4565dc8731efc12e2a7470f\workspace\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:36:13-44
+186            android:enabled="true"
+186-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\17485\.gradle\caches\9.3.1\transforms\22091fd7c4565dc8731efc12e2a7470f\workspace\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:37:13-35
+187            android:exported="true"
+187-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\17485\.gradle\caches\9.3.1\transforms\22091fd7c4565dc8731efc12e2a7470f\workspace\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:38:13-36
+188            android:permission="android.permission.DUMP" >
+188-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\17485\.gradle\caches\9.3.1\transforms\22091fd7c4565dc8731efc12e2a7470f\workspace\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:39:13-57
+189            <intent-filter>
+189-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\17485\.gradle\caches\9.3.1\transforms\22091fd7c4565dc8731efc12e2a7470f\workspace\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:40:13-42:29
+190                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+190-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\17485\.gradle\caches\9.3.1\transforms\22091fd7c4565dc8731efc12e2a7470f\workspace\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:41:17-91
+190-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\17485\.gradle\caches\9.3.1\transforms\22091fd7c4565dc8731efc12e2a7470f\workspace\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:41:25-88
+191            </intent-filter>
+192            <intent-filter>
+192-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\17485\.gradle\caches\9.3.1\transforms\22091fd7c4565dc8731efc12e2a7470f\workspace\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:43:13-45:29
+193                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+193-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\17485\.gradle\caches\9.3.1\transforms\22091fd7c4565dc8731efc12e2a7470f\workspace\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:44:17-85
+193-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\17485\.gradle\caches\9.3.1\transforms\22091fd7c4565dc8731efc12e2a7470f\workspace\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:44:25-82
+194            </intent-filter>
+195            <intent-filter>
+195-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\17485\.gradle\caches\9.3.1\transforms\22091fd7c4565dc8731efc12e2a7470f\workspace\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:46:13-48:29
+196                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+196-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\17485\.gradle\caches\9.3.1\transforms\22091fd7c4565dc8731efc12e2a7470f\workspace\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:47:17-88
+196-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\17485\.gradle\caches\9.3.1\transforms\22091fd7c4565dc8731efc12e2a7470f\workspace\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:47:25-85
+197            </intent-filter>
+198            <intent-filter>
+198-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\17485\.gradle\caches\9.3.1\transforms\22091fd7c4565dc8731efc12e2a7470f\workspace\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:49:13-51:29
+199                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+199-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\17485\.gradle\caches\9.3.1\transforms\22091fd7c4565dc8731efc12e2a7470f\workspace\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:50:17-95
+199-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\17485\.gradle\caches\9.3.1\transforms\22091fd7c4565dc8731efc12e2a7470f\workspace\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:50:25-92
+200            </intent-filter>
+201        </receiver>
+202    </application>
+203
+204</manifest>

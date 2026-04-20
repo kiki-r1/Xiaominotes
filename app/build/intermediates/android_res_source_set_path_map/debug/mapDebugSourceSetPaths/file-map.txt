@@ -1,0 +1,7 @@
+net.micode.notes.app-pngs-0 D:\Notes\app\build\generated\res\pngs\debug
+net.micode.notes.app-updated_navigation_xml-1 D:\Notes\app\build\generated\updated_navigation_xml\debug
+net.micode.notes.app-packageDebugResources-2 D:\Notes\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+net.micode.notes.app-packageDebugResources-3 D:\Notes\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+net.micode.notes.app-debug-4 D:\Notes\app\build\intermediates\merged_res\debug\mergeDebugResources
+net.micode.notes.app-debug-5 D:\Notes\app\src\debug\res
+net.micode.notes.app-main-6 D:\Notes\app\src\main\res
